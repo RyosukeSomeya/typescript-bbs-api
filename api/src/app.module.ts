@@ -8,12 +8,7 @@ import { TagModule } from './modules/tag/tag.module';
 import { ArticleModule } from './modules/article/article.module';
 
 @Module({
-  imports: [
-    TypeOrmModule.forRoot(),
-    UserModule,
-    TagModule,
-    ArticleModule,
-  ],
+  imports: [TypeOrmModule.forRoot(), UserModule, TagModule, ArticleModule],
   controllers: [AppController],
   providers: [AppService],
 })
